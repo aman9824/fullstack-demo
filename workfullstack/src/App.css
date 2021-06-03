@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table, th, td {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border: 1px dotted white;
+  font-size: 12px;
+}
+
+td {
+  padding: 10px 10px;
+}
+
+table {
+  width: 50%;
+  text-align: justify;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 15px 50px;
+  width: 45%;
+}
+
+.btn {
+  background: #d0b08b;
+  padding: 15px 50px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: #221f20;
+  text-decoration: none;
+  transition: all .3s;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 20%);
+}
+
+.btn:hover {
+  background: #221f20;
+  padding: 15px 50px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: #d0b08b;
+  text-decoration: none;
+  transition: all .3s;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 20%);
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  margin-bottom: 10px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 10px;
+}
