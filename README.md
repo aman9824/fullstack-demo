@@ -1,9 +1,9 @@
 # fullstack-demo
 
-Back-End Folder: fullStack_Demo
+Back-End Folder: fullStack_Demo <br>
 I am using Selenium in the back-end because the scraper which i was using was getting blocked by LinkedIn i.e. Status Code 999.
 
-Front-End Folder: workfullstack
+Front-End Folder: workfullstack <br>
 I have made front-end in Just component, I know I can be divided into more smaller components for reusability.
 
 To run the Backend, run api on server 8080,
