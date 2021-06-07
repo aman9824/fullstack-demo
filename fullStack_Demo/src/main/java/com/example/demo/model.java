@@ -1,38 +1,52 @@
 package com.example.demo;
+import org.hibernate.query.criteria.internal.expression.function.LengthFunction;
 
-import org.openqa.selenium.WebElement;
+import javax.persistence.*;
 
-
+@Entity
+@Table(name = "linkedInProfileScraper")
 public class model {
-    public String img_url;
-    public WebElement Name;
-    public WebElement Experience;
-    public WebElement Education;
+    @Id
+    public String url;
+    @Column(length=3000)
+    public String Experience;
+    @Column(length=3000)
+    public String Education;
 
     public model () {
 
     }
 
-    public model (String img_url, WebElement Name, WebElement Experience, WebElement Education) {
-        this.img_url = img_url;
-        this.Name = Name;
+    public model (String url, String Experience, String Education) {
+        this.url = url;
         this.Experience = Experience;
         this.Education = Education;
     }
 
-    public String getImg_url () {
-        return this.img_url;
+    public String getUrl () {
+        return this.url;
     }
 
-    public WebElement getName () {
-        return this.Name;
-    }
-
-    public WebElement getExperience () {
+    public String getExperience () {
         return this.Experience;
     }
 
-    public WebElement getEducation () {
+    public String getEducation () {
         return this.Education;
     }
+
+    public void setUrl (String url) {
+        this.url = url;
+    }
+
+    public void setExperience (String Experience) {
+        this.Experience = Experience;
+    }
+
+    public void setEducation (String Education) {
+        this.Education = Education;
+    }
+
+    public String toString() {return String.format("URL:\n'%s'\n \n Experience:\n'%s'\n\n Education:\n'%s'", this.url, this.Experience, this.Education);}
+
 }
